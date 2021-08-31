@@ -73,7 +73,5 @@ def get_kpi_results(bearer_token_input, scenario_id):
 
 if __name__ == '__main__':
     bearer_token = 'Bearer ' + get_CIAM_token()
-    # scenario_id = run_a_simulation(bearer_token)
-    # print(scenario_id)
     scenario_id = '60db895d3eb3ec5d7b0d78ad'
     get_kpi_results(bearer_token, scenario_id)
