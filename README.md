@@ -1,7 +1,7 @@
 # The MSM SPAutomator&trade;
 
 ## Project Flowchart:
-![Flowchart](https://github.ford.com/AV-TaaS/spa_sensitivity_analysis/raw/main/img/flowchart.png)
+![Flowchart](https://github.com/brianthomaslewis/AV_simulation_automator/blob/main/img/flowchart.png)
 
 
 ## Introduction:
@@ -81,9 +81,7 @@ solvers:
 
 ### How do I obtain `credentials.yaml`?
 This file is not saved to the repository as it contains sensitive credential information. 
-These credentials can also be obtained by contacting the MSM product team
-in the `#pt-routesim` Slack channel. 
-(Brian Lewis also has a working file while he is interning during Summer 2021.)
+These credentials can be obtained by contacting the MSM product team. 
 
 ## Step 4: Specify `input_data/input_scenario.json`
 
@@ -103,11 +101,11 @@ but remaining elements of the API call stay fixed to the structure provided in t
 3. Once that simulation has finished running, return to the main MSM landing page.
 4. Find the `Intermediate Files` link, and download those files by clicking on the icon (see example below).
 
-![MSM_1](https://github.ford.com/AV-TaaS/spa_sensitivity_analysis/raw/main/img/msm_1.png)
+![MSM_1](https://github.com/brianthomaslewis/AV_simulation_automator/blob/main/img/msm_1.png)
 
 5. Open the downloaded `.zip` file and locate the `submission_xxx.json` file (see example below).
 
-![MSM_2](https://github.ford.com/AV-TaaS/spa_sensitivity_analysis/raw/main/img/msm_2.png)
+![MSM_2](https://github.com/brianthomaslewis/AV_simulation_automator/blob/main/img/msm_2.png)
 
 6. Copy this file and save it to `input_data/input_scenario.json`.
 
