@@ -1,0 +1,15 @@
+### scenarioDescription parameters ###
+title: ["miami_req_100_term_2_transloc_lt_5_ut_4"]
+solver_name: ["Transloc Ride Hail"]
+solver_id: ["60db76b700c4ba5682e44bae"]
+map_provider: ["HERE_MAPS"]
+
+### fleetDemand parameters ###
+load_times: [1, 2]
+unload_times: [1, 2]
+
+### vehicleParameters ###
+vehicle_capacity: ["1"]
+## Best to max out at about 35% of total vehicles requested
+num_vehicles: [5, 10, 20, 25, 30]
+fleet_type: ["AMBULATORY"]
