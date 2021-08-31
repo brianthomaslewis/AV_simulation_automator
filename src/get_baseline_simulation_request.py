@@ -52,24 +52,3 @@ def check_payload(input_scenario_json_fp):
     payload["scenario"]["vehicleParameters"]["fleetConfiguration"][0]["configuration"] = [{"BILLY_BOB": 1}]
 
     return payload
-
-
-# if __name__ == '__main__':
-#     data = check_payload('../input_data/input_scenario.json')
-#     with open('../output_json/PAYLOAD2.json', 'w') as f:
-#         json.dump(data, f, indent=4)
-#     print(data)
-
-# def is_list_non_negative(list_item):
-#     for value in list_item:
-#         if value <= 0:
-#             return False
-#     return True
-#
-#
-# def is_valid_parameters(data):
-#     for key in data.keys():
-#         if type(data[key]) == list:
-#             if not is_list_non_negative(data[key]):
-#                 return False
-#     return True
