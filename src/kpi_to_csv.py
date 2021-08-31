@@ -50,39 +50,3 @@ def kpi_to_csv(json_fp, output_fp):
     # Export dataframe to CSV
     output = pd.DataFrame(run_list)
     output.to_csv(output_fp, index=False)
-
-# if __name__ == '__main__':
-#     output.to_csv(f'../output_csv/{fp_title}.csv', index=False)
-
-
-# # Function to dig out nested JSON dictionaries
-# def sub_df(record_path):
-#     df_obj = pd.json_normalize(data=json_file['data'],
-#                                record_path=record_path,
-#                                meta=['displayCode', 'date'])
-#     return df_obj
-#
-#
-# # Function to join nested JSON dataframes back on to main dataframe
-# def join_json_df(input_df, record_path):
-#     output_df = pd.merge(input_df, sub_df(record_path), how='left', on=['displayCode', 'date'])
-#     return output_df
-
-# # Dig out sub-dictionaries
-# df = join_json_df(df_main, 'riderParameters')
-# df = join_json_df(df, 'terminals')
-# df = join_json_df(df, ['vehicleParameters', 'fleetConfiguration'])
-# df = join_json_df(df, ['vehicleParameters', 'fleetConfiguration', 'configuration'])
-# df = join_json_df(df, ['vehicleParameters', 'fleetConfiguration', 'serviceBreaks'])
-# df.drop(['riderParameters', 'terminals', 'vehicleParameters.fleetConfiguration'],
-#         axis=1, inplace=True)
-
-
-# df_rider_params = sub_df('riderParameters')
-# df_terminals = sub_df('terminals')
-# df_vehicle_fleet = sub_df(['vehicleParameters', 'fleetConfiguration'])
-# df_vehicle_fleet_config = sub_df(['vehicleParameters', 'fleetConfiguration', 'configuration'])
-# df_vehicle_fleet_svcbreaks = sub_df(['vehicleParameters', 'fleetConfiguration', 'serviceBreaks'])
-#
-# # Join dataframes together
-# df = pd.merge(df_main, df_rider_params, how = 'left', on=['displayCode', 'date'])
